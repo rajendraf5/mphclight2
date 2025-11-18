@@ -99,7 +99,7 @@ body{ font-family: var(--font-info); font-weight: 500;background: var(--backgrou
     background: var(--color-primary);
     color: var(--color-white);
     border: 0;
-    padding: 102px 30px;
+    padding: 10px 30px;
     border-radius: var(--bs-border-radius-sm);
 }
 .otpbtn:hover{background: var(--color-primay-hover);}
