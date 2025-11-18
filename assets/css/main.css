@@ -7,14 +7,14 @@
 
 :root {
   --background-color: #fff;
-  --default-color: #034481;
+  --default-color: #0c0c0c;
   --color-primary: #da261e;
   --color-primay-hover:#191c60;
   --color-white: #ffffff;
   --logo-border:#f1f0f0;
   --color-black:#000;
   --color-gray-light:#9f9f9f;
-  --text-gold:#ba8f46;
+  --text-gold:#6d6b69;
   --bs-light-gray:#6b6b6b;
   --top-nav-hover:#f8524e;
   --accent-color: #262626;
@@ -25,9 +25,9 @@
   --top-menu-border:#939393;
   --transition: all 0.4s;
   --border-primay-color:#dee2e6;
-  --border-bs-light:#316e8c;
+  --border-bs-light:#3b3e40;
   --bs-gradient:linear-gradient(to bottom, #f84c4a, #f8695e);
-  --select-border:#eaeaea;
+  --select-border:#939393;
 }
 
 
@@ -50,7 +50,7 @@ body{ font-family: var(--font-info); font-weight: 500;background: var(--backgrou
     justify-content: center;
     align-items: center;
     padding: 15px;
-    background: rgb(255 255 255 / 93%);
+    /*background: rgb(255 255 255 / 93%);*/
    /* background: -webkit-linear-gradient(bottom, rgb(0 0 0 / 75%), rgb(3 3 3 / 71%));
     background: -o-linear-gradient(bottom, rgb(0 0 0 / 75%), rgb(3 3 3 / 71%));
     background: -moz-linear-gradient(bottom, rgb(0 0 0 / 75%), rgb(3 3 3 / 71%));
@@ -67,16 +67,16 @@ body{ font-family: var(--font-info); font-weight: 500;background: var(--backgrou
     height: 100%;
     top: 0;
     left: 0;
-    background-image: url(../images/loginbg.jpg);
+    background-image: url(../images/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .wrap-login100 {
     max-width: 500px;
-    padding: 2rem;
+    padding: 1.5rem;
     border: 1px solid var(--border-primay-color);
-    background: #fff;
+    background: rgb(255 255 255 / 60%);
     border-radius: 0.5rem;
     backdrop-filter: blur(0px);
     box-shadow: 0 0 30px rgb(0 0 0 / 20%);
@@ -84,6 +84,7 @@ body{ font-family: var(--font-info); font-weight: 500;background: var(--backgrou
 .loginform{color: var(--color-black);}
 .logo{font-family: "Playfair Display", serif}
 .logo img {width: 140px; height: auto}
+.logo h2{font-size: 1.25rem}
 .loginform h4 {color: var(--color-black);}
 .loginform .form-control{
     background:#fff;
@@ -92,17 +93,22 @@ body{ font-family: var(--font-info); font-weight: 500;background: var(--backgrou
     backdrop-filter: blur(10px);
 }
 .loginform .form-control:focus{box-shadow: none; border-color: var(--color-black);}
-.loginform .form-floating>label{ color: var(--color-black);}
+.loginform .form-floating>label{ color: var(--color-black);padding: 0.5rem .75rem;}
 .otpbtn{
     transition: all 0.6s;
     background: var(--color-primary);
     color: var(--color-white);
     border: 0;
-    padding: 15px 30px;
+    padding: 102px 30px;
     border-radius: var(--bs-border-radius-sm);
 }
 .otpbtn:hover{background: var(--color-primay-hover);}
 .resent-text{color: var(--color-gray-light);}
+.form-floating>.form-control, .form-floating>.form-control-plaintext, .form-floating>.form-select {
+    height: calc(1.5rem + calc(var(--bs-border-width) * 2));
+        min-height: calc(2.5rem + calc(var(--bs-border-width) * 2));
+}
+header{background: rgb(255 255 255 / 75%)}
 .headerlogo{padding-right: 1rem;}
 .headerlogo img{height: 70px;}
 .navmenu li{padding: 5px 5px;}
@@ -214,14 +220,14 @@ body{ font-family: var(--font-info); font-weight: 500;background: var(--backgrou
 .logotext {color: #000;font-family: "Playfair Display", serif;}
 .logotext h3{margin-bottom: 0.25rem; font-weight: bold;}
 .logotext h4{color: var(--text-gold);font-weight: bold;}
-.content-banner {position: relative;padding-top: 140px;}
+.content-banner {position: relative;padding-top: 120px;}
 .content-banner-img{position: relative;}
 .content-banner-img:before {
     content: "";
     display: block;
     width: 100%;
     height:550px;
-    background: rgb(255 255 255 / 93%);
+    /*background: rgb(255 255 255 / 1%);*/
     position: absolute;
     bottom: 0;
     top:0;
@@ -259,14 +265,15 @@ body{ font-family: var(--font-info); font-weight: 500;background: var(--backgrou
     background-size: 16px 12px;
 }*/
 .videoplayicon{    
-    background: var(--color-white);
-    min-width: 70px;
-    min-height: 40px;
+        background: var(--color-white);
+    min-width: 56px;
+    min-height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
     color: var(--top-nav-hover);
+    border: 1px solid #d8d7d7;
 }
 .video-card{background: var(--color-white); padding: 10px; border-radius: var(--bs-border-radius-sm);box-shadow: 0px 4px 10px rgb(0 0 0 / 19%);
     width: 100%; transition: var(--transition); height: 100%}
